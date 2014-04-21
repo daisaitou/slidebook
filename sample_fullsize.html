@@ -1,97 +1,97 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<script type="text/javascript" src="js/SlideBook.js"></script>
-		<script>
-			window.onload = function(){
-				var book = new SlideBook("book_placeholder", "bookpage", "book");
-				
-				book.setFullScreen(true);
-				
-				book.setGradationSize(4);
-				book.setBaseColor(90, 60, 30);
-				book.setShadowColor(40, 30, 10);
-				
-				book.setScrollSize(5);
-				book.setIntervalLength(15);
-				
-				book.setFootHeight(25);
-				
-				book.setNextLabel("next ->");
-				book.setPrevLabel("<- prev");
-				book.setHeadLabel("<< top");
-				
-				book.build();
-			}
-		</script>
-		<style>
-			BODY{ background-color : #DDBB99; }
-			H1{ font-size : 15px; }
-			H2{ font-size : 13px; }
-			
-			.bookpage{
-				font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-				font-size : 12px;
-				color : rgb(200,150,80);
-				padding : 5px;
-			}
-			.book_pageframe::-webkit-scrollbar{ overflow:hidden; width:5px; background-color:rgba(150,100,50,0.2); border-radius:3px; border-radius:3px; }
-			.book_pageframe::-webkit-scrollbar:horizontal{ height:5px; }
-			.book_pageframe::-webkit-scrollbar-button{  }
-			.book_pageframe::-webkit-scrollbar-thumb{ overflow:hidden; border-radius:3px; background-color:rgba(20,10,0,0.5); }
-			.book_pagenumber{ font-size : 12px; color : rgb(160,120,80); }
-			.book_turninfo{ font-size : 12px; color : rgb(160,120,80); }
-			
-			#sending_form .textinp{ border:1px solid rgb(160,120,80); background-color:transparent; color:rgb(160,120,80); }
-			#sending_form .btn{ border:1px solid rgb(160,120,80); background-color:rgb(80,60,40); color:rgb(160,120,80); }
-		</style>
-	</head>
-	<body>
-		<div>
-			<div id="book_placeholder"></div>
-			<div class="bookpage">
-				<h1>SlideBook Fullscreen Sample</h1>
-				<p>
-					If you want to set your page "FullScreen SlideBook", add JS code like ...<br><br>
-					<i>book.setFullScreen(true);</i><br><br>
-					Only this, you can show your page as pamphlet, catalog, albam, etc.
-				</p>
-			</div>
-			<div class="bookpage">
-				<h2>here is page2</h2>
-				<form id="sending_form">
-					We can use form here!<br>
-					<input type="text" class="textinp" placeholder="input something"><input type="button" value="Don't send" class="btn">
-				</form>
-			</div>
-			<div class="bookpage">
-				<h2>here is page3</h2>
-				<div>
-					Oh!<br>&lt;- LeftPage's scrollbar!?
-					<br><br>
-					We can use images as HTML like ... <br>&lt;img src="somephoto.jpg"&gt;<br>
-					<img src="logo4sample.png"><br>
-					<img src="logo4sample.png"><br>
-					<img src="logo4sample.png"><br>
-					<img src="logo4sample.png"><br>
-					<img src="logo4sample.png"><br>
-					<img src="logo4sample.png">
-					
-				</div>
-			</div>
-			<div class="bookpage">
-				<h2>here is page4</h2>
-				<p>
-					too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>
-				</p>
-			</div>
-			<div class="bookpage">
-				<h2>here is page5</h2>
-			</div>
-			<div class="bookpage">
-				<h2>here is page6</h2>
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/SlideBook.js"></script>
+        <script>
+            window.onload = function(){
+                var book = new SlideBook("book_placeholder", "bookpage", "book");
+                
+                book.setFullScreen(true);
+                
+                book.setGradationSize(4);
+                book.setBaseColor(90, 60, 30);
+                book.setShadowColor(40, 30, 10);
+                
+                book.setScrollSize(5);
+                book.setIntervalLength(15);
+                
+                book.setFootHeight(25);
+                
+                book.setNextLabel("next ->");
+                book.setPrevLabel("<- prev");
+                book.setHeadLabel("<< top");
+                
+                book.build();
+            }
+        </script>
+        <style>
+            BODY{ background-color : #DDBB99; }
+            H1{ font-size : 15px; }
+            H2{ font-size : 13px; }
+            
+            .bookpage{
+                font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+                font-size : 12px;
+                color : rgb(200,150,80);
+                padding : 5px;
+            }
+            .book_pageframe::-webkit-scrollbar{ overflow:hidden; width:5px; background-color:rgba(150,100,50,0.2); border-radius:3px; border-radius:3px; }
+            .book_pageframe::-webkit-scrollbar:horizontal{ height:5px; }
+            .book_pageframe::-webkit-scrollbar-button{  }
+            .book_pageframe::-webkit-scrollbar-thumb{ overflow:hidden; border-radius:3px; background-color:rgba(20,10,0,0.5); }
+            .book_pagenumber{ font-size : 12px; color : rgb(160,120,80); }
+            .book_turninfo{ font-size : 12px; color : rgb(160,120,80); }
+            
+            #sending_form .textinp{ border:1px solid rgb(160,120,80); background-color:transparent; color:rgb(160,120,80); }
+            #sending_form .btn{ border:1px solid rgb(160,120,80); background-color:rgb(80,60,40); color:rgb(160,120,80); }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="book_placeholder"></div>
+            <div class="bookpage">
+                <h1>SlideBook Fullscreen Sample</h1>
+                <p>
+                    If you want to set your page "FullScreen SlideBook", add JS code like ...<br><br>
+                    <i>book.setFullScreen(true);</i><br><br>
+                    Only this, you can show your page as pamphlet, catalog, albam, etc.
+                </p>
+            </div>
+            <div class="bookpage">
+                <h2>here is page2</h2>
+                <form id="sending_form">
+                    We can use form here!<br>
+                    <input type="text" class="textinp" placeholder="input something"><input type="button" value="Don't send" class="btn">
+                </form>
+            </div>
+            <div class="bookpage">
+                <h2>here is page3</h2>
+                <div>
+                    Oh!<br>&lt;- LeftPage's scrollbar!?
+                    <br><br>
+                    We can use images as HTML like ... <br>&lt;img src="somephoto.jpg"&gt;<br>
+                    <img src="logo4sample.png"><br>
+                    <img src="logo4sample.png"><br>
+                    <img src="logo4sample.png"><br>
+                    <img src="logo4sample.png"><br>
+                    <img src="logo4sample.png"><br>
+                    <img src="logo4sample.png">
+                    
+                </div>
+            </div>
+            <div class="bookpage">
+                <h2>here is page4</h2>
+                <p>
+                    too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>too many contents...<br>
+                </p>
+            </div>
+            <div class="bookpage">
+                <h2>here is page5</h2>
+            </div>
+            <div class="bookpage">
+                <h2>here is page6</h2>
+            </div>
+        </div>
+    </body>
 </html>
