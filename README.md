@@ -1,4 +1,4 @@
-slidebook
+SlideBook.js
 =========
 
 now editing...
