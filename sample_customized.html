@@ -24,12 +24,17 @@
                 book.setHeadLabel("<< top");
                 
                 book.build();
+                
+                window.book = book;
             }
         </script>
         <style>
             BODY{ background-color : #DDBB99; }
             H1{ font-size : 15px; }
             H2{ font-size : 13px; }
+            
+            .turn_trigger{ cursor : pointer; }
+            .turn_trigger:hover{ text-decoration:underline; }
             
             .bookpage{
                 font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
@@ -44,6 +49,7 @@
             .book_pagenumber{ font-size : 12px; color : rgb(160,120,80); }
             .book_turninfo{ font-size : 12px; color : rgb(160,120,80); }
             
+            #book_placeholder{ width:700px; height:400px; }
             #sending_form .textinp{ border:1px solid rgb(160,120,80); background-color:transparent; color:rgb(160,120,80); }
             #sending_form .btn{ border:1px solid rgb(160,120,80); background-color:rgb(80,60,40); color:rgb(160,120,80); }
         </style>
@@ -90,5 +96,17 @@
                 <h2>here is page6</h2>
             </div>
         </div>
+        
+        <h2>public methods</h2>
+        <ul>
+            <li class="turn_trigger" onclick="book.turn(0);">page1:book.turn(0)</li>
+            <li class="turn_trigger" onclick="book.turn(1);">page2:book.turn(1)</li>
+            <li class="turn_trigger" onclick="book.turn(2);">page3:book.turn(2)</li>
+            <li class="turn_trigger" onclick="book.turn(3);">page4:book.turn(3)</li>
+            <li class="turn_trigger" onclick="book.turn(4);">page5:book.turn(4)</li>
+            <li class="turn_trigger" onclick="book.turn(5);">page6:book.turn(5)</li>
+            <li class="turn_trigger" onclick="book.turn('next');">next_page:book.turn('next')</li>
+            <li class="turn_trigger" onclick="book.turn('prev');">prev_page:book.turn('prev')</li>
+        </ul>
     </body>
 </html>
